@@ -430,8 +430,16 @@ body {
 }
 
 .modal-form__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -668,7 +676,7 @@ body {
 .social-media__link {
   width: 44px;
   height: 44px;
-  color: #757575;
+  color: #afb1b8;
   fill: currentColor;
   display: inline-block;
   display: -webkit-box;
@@ -716,7 +724,7 @@ body {
 
 .clients-set__link {
   height: 92px;
-  color: #757575;
+  color: #afb1b8;
   fill: currentColor;
   display: inline-block;
   display: -webkit-box;
