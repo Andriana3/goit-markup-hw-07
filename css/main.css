@@ -91,6 +91,32 @@ body {
   padding: 0;
 }
 
+.navigation__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.navigation__logo--end {
+  padding: 0;
+}
+
+.navigation__accent {
+  color: #212121;
+}
+.navigation__accent--end {
+  color: #ffffff;
+}
+
 .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,32 +214,6 @@ body {
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.navigation__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 85px;
-  padding-top: 24px;
-  padding-bottom: 23px;
-  color: #2196f3;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-.navigation__logo--end {
-  padding: 0;
-}
-
-.navigation__accent {
-  color: #212121;
-}
-.navigation__accent--end {
-  color: #ffffff;
 }
 
 .section-hero {
@@ -689,8 +689,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  -webkit-transition-property: backgroud-color;
-  transition-property: backgroud-color;
+  -webkit-transition-property: backgroud-color, color;
+  transition-property: backgroud-color, color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -738,8 +738,8 @@ body {
           justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -785,14 +785,22 @@ body {
   padding-left: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
+  -webkit-transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: background-color, color, box-shadow;
+  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-set__name:hover, .button-set__name:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-set__name--current {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -936,6 +944,21 @@ body {
   padding-top: 20px;
 }
 
+.footer-social-content {
+  margin-top: 12px;
+}
+
+.footer-social-content__title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 .address-detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -958,8 +981,8 @@ body {
 .address-detail__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
+  -webkit-transition-property: color;
+  transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -967,21 +990,6 @@ body {
 }
 .address-detail__link:hover, .address-detail__link:focus {
   color: #2196f3;
-}
-
-.footer-social-content {
-  margin-top: 12px;
-}
-
-.footer-social-content__title {
-  text-align: left;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: #ffffff;
 }
 
 .network-list {
