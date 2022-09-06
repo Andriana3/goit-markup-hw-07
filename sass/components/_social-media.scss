@@ -19,7 +19,7 @@
     justify-content: center;
     border-radius: 50%;
 
-    @include transition-properly(backgroud-color, color);
+    @include transition-properly(background-color, color);
 
     &:hover,
     &:focus {
